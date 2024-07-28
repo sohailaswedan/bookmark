@@ -1,0 +1,48 @@
+:root,main
+{
+    background-color: #f7ecde;
+}
+h1
+{
+    font-size: 50px;
+    font-family: "Pacifico", cursive;
+    position: relative;
+    z-index: 3;
+}
+.head::after
+{
+    content: "";
+    position: absolute;
+    width: 19%;
+    height: 10px;
+    bottom: 10px;
+    left: 40%;
+    z-index: -1;
+    background-color: #fec260;
+    transition:height 25ms;
+}
+.head:hover .head::after
+{
+    height: 80px;
+
+}
+hr
+{
+    border-top: 2px dotted black;
+    color: black;
+}
+.form-control:focus
+{
+    box-shadow: none;
+    border-color: yellow;
+}
+.sb
+{
+    background-color: #d1512d;
+    color: white;
+    border: 1px transparent solid;
+    padding-inline: 35px;
+    padding-block: 5px;
+    width: 10%;
+    margin-inline: auto;
+}
